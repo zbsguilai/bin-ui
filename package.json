@@ -9,7 +9,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "main": "dist/guilaiui.min.js",
+  "main": "lib/guilai-ui.common.js",
   "keywords": [
     "gl-btn",
     "components"

@@ -1,12 +1,37 @@
 {
-  "name": "demo2",
+  "name": "Guilai UI",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "guilai",
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+
+  "main": "dist/GuilaiUI.min.js", 
+  
+  "keywords": [ 
+    "gl-btn",
+    "components"
+  ],
+  
+  "files": [ 
+    "dist",
+    "src/base"
+  ],
+  
+  "homepage": "", 
+  
+  "bugs": { 
+    "url": ""
+  },
+  
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/xx/xx-btn.git"
+  },
+
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",

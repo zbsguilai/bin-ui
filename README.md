@@ -1,4 +1,5 @@
-# demo2
+# bin-ui
+bin-ui前端组件库
 
 ## Project setup
 ```

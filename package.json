@@ -1,49 +1,23 @@
 {
-  "name": "guilaiui",
-  "version": "0.1.3",
-  "private": false,
-  "author": "guilai",
-  "license": "MIT",
+  "name": "my-app1",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib ./src/package/index.js --name bin-ui --dest bin-ui",
     "lint": "vue-cli-service lint"
-  },
-  "main": "dist/guilai-ui.common.js",
-  "keywords": [
-    "gl-btn",
-    "components"
-  ],
-  "files": [
-    "dist",
-    "src/base"
-  ],
-  "homepage": "",
-  "bugs": {
-    "url": "https://github.com/zbsguilai/guilai/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zbsguilai/guilai.git"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.13",
-    "@vue/cli-plugin-eslint": "~4.5.13",
-    "@vue/cli-plugin-router": "~4.5.13",
-    "@vue/cli-plugin-vuex": "~4.5.13",
-    "@vue/cli-service": "~4.5.13",
-    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.2.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -53,8 +27,7 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/prettier"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
@@ -65,5 +38,7 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "main": "index.js",
+  "license": "MIT"
 }

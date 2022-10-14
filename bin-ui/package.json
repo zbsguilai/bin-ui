@@ -1,0 +1,10 @@
+{
+  "name": "bin-ui",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main":"bin-ui.common.js",
+  "keywords": [
+    "bin-button",
+    "components"
+  ]
+}
